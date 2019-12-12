@@ -1,0 +1,29 @@
+@import (reference) "../../variables";
+@import (reference) "_mixins";
+
+.button {
+    margin: 0 4px 0 0;
+    padding: 10px 15px;
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    outline: 0;
+    vertical-align: baseline;
+    font-weight: normal;
+    text-align: center;
+    text-decoration: none;
+    transition: all .1s ease;
+
+    border-radius: @border-radius-base;
+    font-family: @font-family-base;
+    line-height: @font-size-base;
+    font-size: @font-size-base;
+
+    .button-normal(@color-gray, fade(@color-font, 80%));
+
+    &:disabled {
+        cursor: default;
+        opacity: .5 !important;
+        pointer-events: none !important;
+    }
+}

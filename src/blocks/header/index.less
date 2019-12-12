@@ -1,0 +1,19 @@
+@import (reference) "../../variables";
+
+.header {
+    font-size: @font-size-base;
+    margin-bottom: @indent-base;
+    line-height: @font-size-base;
+    font-weight: bolder;
+
+    &.header-large {
+        font-size: @font-size-base * 2;
+        margin-bottom: @indent-base * 2;
+        line-height: @font-size-base * 2;
+    }
+
+    &.header-bordered {
+        padding-bottom: @indent-base;
+        border-bottom: 1px solid @color-gray;
+    }
+}

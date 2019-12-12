@@ -1,0 +1,30 @@
+@import (reference) "variables";
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    display: flex;
+}
+
+.column {
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+}
+
+.side-nav {
+    flex-shrink: 0;
+    width: 300px;
+    margin-top: 60px;
+}
+.top-nav {
+    margin-top: @indent-base;
+    margin-right: @indent-base;
+    float: right;
+}
+
+.page-content {
+    padding: 60px @indent-base;
+}

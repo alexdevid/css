@@ -1,0 +1,42 @@
+@import (reference) "../variables";
+
+body {
+    font-family: @font-family-base;
+    font-size: @font-size-base;
+    color: @color-font;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: @color-link;
+    transition: all .1s ease;
+
+    &:hover {
+        text-decoration: none;
+        color: darken(@color-link, 20%);
+    }
+}
+
+h1, h2, h3 {
+    font-size: @font-size-base * 2;
+    line-height: @font-size-base * 2;
+    margin-bottom: @indent-base * 2;
+}
+
+h4, h5, h6 {
+    font-size: @font-size-base;
+    line-height: @font-size-base;
+    margin-bottom: @indent-base;
+}
+
+p {
+    margin-bottom: @indent-base;
+}
+
+ul {
+    list-style: none;
+    li {
+        margin-bottom: @indent-base / 2;
+    }
+}

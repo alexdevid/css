@@ -1,0 +1,36 @@
+@import (reference) "../../variables";
+@import (reference) "_mixins";
+
+.button {
+    &.button-primary {
+        .button-normal(@color-primary, @color-white);
+    }
+
+    &.button-danger {
+        .button-normal(@color-danger, @color-white);
+    }
+
+    &.button-info {
+        .button-normal(@color-info, @color-white);
+    }
+
+    &.button-success {
+        .button-normal(@color-success, @color-white);
+    }
+
+    &.button-warning {
+        .button-normal(@color-warning, @color-white);
+    }
+
+    &.button-secondary {
+        .button(@color-black, @color-white);
+
+        &:hover {
+            .button(lighten(@color-black, 5%), @color-white);
+        }
+
+        &:active {
+            .button(lighten(@color-black, 10%), @color-white);
+        }
+    }
+}

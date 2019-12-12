@@ -1,0 +1,20 @@
+{
+    "name": "css.test",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "keywords": [],
+    "author": "Alexander Tsukanov",
+    "license": "ISC",
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-less": "^4.0.1",
+        "gulp-twig": "^1.2.0"
+    },
+    "scripts": {
+        "build": "./node_modules/gulp/bin/gulp.js styles",
+        "twig": "./node_modules/gulp/bin/gulp.js twig",
+        "watch": "./node_modules/gulp/bin/gulp.js watch",
+        "sample": "./node_modules/gulp/bin/gulp.js sample"
+    }
+}

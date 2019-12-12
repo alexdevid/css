@@ -1,0 +1,33 @@
+@import (reference) "../../variables";
+
+.menu {
+    .menu-item {
+        margin: 0 4px 0 0;
+        padding: 10px 15px;
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: baseline;
+        font-weight: normal;
+        text-align: center;
+        text-decoration: none;
+        transition: all .1s ease;
+
+        color: @color-font;
+        border-radius: @border-radius-base;
+        font-family: @font-family-base;
+        line-height: @font-size-base;
+        font-size: @font-size-base;
+
+        &:hover {
+            background-color: @color-gray;
+        }
+
+        &.menu-item-active {
+            background-color: @color-gray;
+        }
+
+        &.menu-text {
+
+        }
+    }
+}

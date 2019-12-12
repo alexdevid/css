@@ -1,0 +1,205 @@
+/**
+ * Released under the MIT license
+ * http://opensource.org/licenses/MIT
+ */
+
+@import (reference) "../variables";
+
+*, :after, :before {
+    box-sizing: border-box
+}
+
+html {
+    box-sizing: border-box
+}
+
+a, h1, h2, h3, h4, h5, h6, p, ul, li, div, html, body {
+    font-size: @font-size-base;
+    margin: 0;
+    padding: 0;
+}
+
+input[type=email], input[type=password], input[type=search], input[type=text] {
+    -webkit-appearance: none;
+    -moz-appearance: none
+}
+
+article, aside, footer, header, nav, section {
+    display: block;
+    font-size: @font-size-base;
+}
+
+figcaption, figure, main {
+    display: block;
+    font-size: @font-size-base;
+}
+
+pre {
+    font-family: monospace, monospace;
+    font-size: @font-size-base;
+}
+
+abbr[title] {
+    border-bottom: none;
+    text-decoration: underline dotted;
+}
+
+b, strong {
+    font-weight: inherit;
+    font-size: @font-size-base;
+}
+
+b, strong {
+    font-weight: bolder
+}
+
+code, kbd, samp {
+    font-family: monospace, monospace;
+    font-size: @font-size-base;
+}
+
+dfn {
+    font-style: italic;
+    font-size: @font-size-base;
+}
+
+mark {
+    background-color: #ff0;
+    color: #000
+}
+
+small {
+    font-size: 80%
+}
+
+sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline
+}
+
+sub {
+    bottom: -.25em
+}
+
+sup {
+    top: -.5em
+}
+
+audio, video {
+    display: inline-block
+}
+
+audio:not([controls]) {
+    display: none;
+    height: 0
+}
+
+img {
+    border-style: none
+}
+
+svg:not(:root) {
+    overflow: hidden
+}
+
+button, input, optgroup, select, textarea {
+    font-size: @font-size-base;
+    margin: 0
+}
+
+button, input {
+    font-size: @font-size-base;
+    overflow: visible
+}
+
+button, select {
+    font-size: @font-size-base;
+    text-transform: none
+}
+
+[type=reset], [type=submit], button, html [type=button] {
+    font-size: @font-size-base;
+    -webkit-appearance: button
+}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner, button::-moz-focus-inner {
+    font-size: @font-size-base;
+    border-style: none;
+    padding: 0
+}
+
+[type=button]:-moz-focusring, [type=reset]:-moz-focusring, [type=submit]:-moz-focusring, button:-moz-focusring {
+    font-size: @font-size-base;
+    outline: 1px dotted ButtonText
+}
+
+legend {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    color: inherit;
+    display: table;
+    max-width: 100%;
+    padding: 0;
+    white-space: normal;
+    font-size: @font-size-base;
+}
+
+progress {
+    display: inline-block;
+    vertical-align: baseline
+}
+
+textarea {
+    font-size: @font-size-base;
+    overflow: auto
+}
+
+[type=checkbox], [type=radio] {
+    box-sizing: border-box;
+    padding: 0
+}
+
+[type=number]::-webkit-inner-spin-button, [type=number]::-webkit-outer-spin-button {
+    font-size: @font-size-base;
+    height: auto
+}
+
+[type=search] {
+    font-size: @font-size-base;
+    -webkit-appearance: textfield;
+    outline-offset: -2px
+}
+
+[type=search]::-webkit-search-cancel-button, [type=search]::-webkit-search-decoration {
+    -webkit-appearance: none
+}
+
+::-webkit-file-upload-button {
+    -webkit-appearance: button;
+    font: inherit
+}
+
+details, menu {
+    font-size: @font-size-base;
+    display: block
+}
+
+summary {
+    font-size: @font-size-base;
+    display: list-item
+}
+
+canvas {
+    font-size: @font-size-base;
+    display: inline-block
+}
+
+template {
+    display: none
+}
+
+[hidden] {
+    display: none
+}

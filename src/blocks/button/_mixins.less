@@ -1,0 +1,32 @@
+.button(@background-color, @color) {
+    background-color: @background-color;
+    color: @color;
+}
+
+.button-normal(@background-color, @color) {
+    .button(@background-color, @color);
+
+    &:hover {
+        .button(darken(@background-color, 5%), @color);
+    }
+
+    &:active {
+        .button(darken(@background-color, 10%), @color);
+    }
+}
+
+.button-basic(@border-color) {
+    .button(transparent, @border-color);
+    border: 1px solid @border-color;
+
+    &:hover {
+        .button(transparent, @border-color);
+        border: 1px solid fadein(@border-color, 10%);
+    }
+
+    &:active {
+        .button(fade(@border-color, 10%), @border-color);
+        border: 1px solid fadein(@border-color, 25%);
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, .05) inset, 0 1px 4px 0 rgba(34, 36, 38, .05) inset;
+    }
+}

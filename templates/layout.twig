@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/sample.css">
+</head>
+<body>
+
+<div class="column side-nav">
+    <div class="menu menu-vertical">
+        <a href="/" class="menu-item {% if active == 'button' %}menu-item-active{% endif %}">Overview</a>
+        <a href="/button.html" class="menu-item {% if active == 'button' %}menu-item-active{% endif %}">Buttons</a>
+        <a href="#" class="menu-item">Menu item 2</a>
+        <a href="#" class="menu-item">Menu item 3</a>
+    </div>
+</div>
+<div class="column">
+    <div class="top-nav">
+        <div class="menu">
+            <a href="#" class="menu-item">Menu item 1</a>
+            <a href="#" class="menu-item">Menu item 2</a>
+            <a href="#" class="menu-item">Menu item 3</a>
+        </div>
+    </div>
+
+    <div class="page-content">
+        {% block content %}{% endblock %}
+    </div>
+</div>
+</body>
+</html>

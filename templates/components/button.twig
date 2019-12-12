@@ -1,0 +1,21 @@
+{% extends '../layout.twig' %}
+
+{% set active = 'button' %}
+{% block content %}
+    <h1 class="header header-large header-bordered">Buttons</h1>
+    <button class="button">.button</button>
+    <button class="button" disabled>.button :disabled</button>
+    <div class="button button-primary">.button .button-primary</div>
+    <div class="button button-secondary">.button .button-secondary</div>
+    <div class="button button-basic">.button .button-basic</div>
+    <hr class="divider">
+    <div class="button button-danger">.button .button-danger</div>
+    <div class="button button-success">.button .button-success</div>
+    <div class="button button-warning">.button .button-warning</div>
+    <div class="button button-info">.button .button-info</div>
+    <div class="divider"></div>
+    <div class="button button-basic button-primary">.button .button-basic .button-primary</div>
+    <div class="button button-basic button-success">.button .button-basic .button-success</div>
+    <div class="button button-basic button-warning">.button .button-basic .button-warning</div>
+    <div class="button button-basic button-info">.button .button-basic .button-info</div>
+{% endblock %}

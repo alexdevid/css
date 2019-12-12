@@ -1,0 +1,41 @@
+@import (reference) "../../variables";
+@import (reference) "_mixins";
+
+.button {
+    &.button-basic {
+        .button(transparent, @color-font);
+        border: 1px solid @color-gray;
+
+        &:hover {
+            .button(transparent, @color-font);
+            border: 1px solid fadein(@color-gray, 10%);
+        }
+
+        &:active {
+            .button(fade(@color-gray, 10%), @color-font);
+            border: 1px solid fadein(@color-gray, 25%);
+            box-shadow: 0 0 0 1px rgba(0, 0, 0, .05) inset, 0 1px 4px 0 rgba(34, 36, 38, .05) inset;
+        }
+
+
+        &.button-primary {
+            .button-basic(@color-primary);
+        }
+
+        &.button-danger {
+            .button-basic(@color-danger);
+        }
+
+        &.button-info {
+            .button-basic(@color-info);
+        }
+
+        &.button-success {
+            .button-basic(@color-success);
+        }
+
+        &.button-warning {
+            .button-basic(@color-warning);
+        }
+    }
+}
